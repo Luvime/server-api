@@ -41,6 +41,12 @@ mercadopago.configure({
 
 // A. GUITARRAS
 
+app.get("/", async (req, res) => {
+    res.json({
+        msg: "todo okey"
+    })
+})
+
 app.get("/obtener-guitarras", async (req, res) => {
     try {
         const guitarras = await Guitarra.find({})
